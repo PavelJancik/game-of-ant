@@ -1,4 +1,4 @@
-# Game of Life
+# Game of Life & Langton's Ant
 
 <p align="center">
    <img src="/resources/thumbnail.png" alt="Game of Life Thumbnail" width="400"/>
