@@ -6,6 +6,8 @@
 
 This game combine Conway's Game of Life and Langton's Ant. This game differs in grid size, as it is not infinite, some patterns behave other way than in original game. Due to small resolution of the grid, the ant will not come to the state, where he can create highways. However you can use him to create initial state for Game of Life.
 
+Tip: Load this file to game and use it as initial pattern: "28.06.2021-01.38.20-Glider_gun.txt"
+
 ## Features
 
 - Interactive grid for creating and editing patterns
