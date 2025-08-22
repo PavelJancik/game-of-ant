@@ -1,0 +1,35 @@
+# Qt build files
+*.pro.user
+*.qmake.stash
+*.qmake.cache
+*.moc/
+*.obj/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.app
+*.dSYM/
+*.user
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.db
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+# Qt Creator CMake
+CMakeLists.txt.user
+# OS generated files
+.DS_Store
+Thumbs.db
+# Backup files
+*~
+# Resource compiler generated files
+qrc_*.cpp
+# Visual Studio Code
+.vscode/

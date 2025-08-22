@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/pics">
+        <file>menu.png</file>
+        <file>bg.jpg</file>
+        <file>bg_dis.jpg</file>
+        <file>glider_down_right.png</file>
+        <file>glider_down_left.png</file>
+        <file>glider_up_left.png</file>
+        <file>glider_up_right.png</file>
+        <file>pulsar.png</file>
+        <file>spaceship_down.png</file>
+        <file>spaceship_left.png</file>
+        <file>spaceship_right.png</file>
+        <file>spaceship_up.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>1281</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(22, 22, 22);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+   <widget class="QPushButton" name="start">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#start {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#start:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#start:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Start Life</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_step">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#next_step {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#next_step:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#next_step:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Next Gen</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="speed">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>40</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>30</red>
+          <green>104</green>
+          <blue>126</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Link">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>18</red>
+          <green>73</green>
+          <blue>99</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>30</red>
+          <green>104</green>
+          <blue>126</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Link">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>18</red>
+          <green>73</green>
+          <blue>99</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>51</red>
+          <green>153</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Link">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>18</red>
+          <green>73</green>
+          <blue>99</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>40</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#reset {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#reset:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#reset:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Reset Init</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>40</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::PreventContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#clear {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#clear:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#clear:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="initAntGeneration">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+background-image: url(:/pics/bg.jpg);
+border: 1px solid rgb(99,99,99);</string>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="maximum">
+     <number>99999</number>
+    </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::DefaultStepType</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_init_state">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#save_init_state {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#save_init_state:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#save_init_state:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Save Init</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="speed_label">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>41</y>
+      <width>50</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+color: white;
+font: bold;
+border: none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px; font-weight:400;&quot;&gt;1x&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="load_file">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>40</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#load_file {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#load_file:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#load_file:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Load File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_file">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#save_file {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#save_file:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#save_file:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Save File</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="ant_gen">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>40</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+color: white;
+font: bold;
+border: none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18px; font-weight:400;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="menu_bg">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pics/menu.png);</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_ant">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1</width>
+      <height>1</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>500</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#add_ant {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#add_ant:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#add_ant:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Add Ant</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="move_ant">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#move_ant {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#move_ant:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#move_ant:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Move Ant</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_ant">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#start_ant {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#start_ant:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#start_ant:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Start Ant</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="ant_gen_label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>101</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+color: white;
+font: bold;
+border: none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18px; font-weight:400;&quot;&gt;Generation:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="life_gen_label">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>40</y>
+      <width>101</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+color: white;
+font: bold;
+border: none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18px; font-weight:400;&quot;&gt;Generation:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="patterns">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>10</y>
+      <width>90</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#patterns {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#patterns:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#patterns:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>Patterns</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="patterns_group">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>461</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(22, 22, 22);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="Gliders">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="title">
+      <string>Gliders</string>
+     </attribute>
+     <widget class="QPushButton" name="glider_d_r">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>100</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#glider_d_r {
+color: white;
+background-image: url(:/pics/glider_down_right.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#glider_d_r:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#glider_d_r:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="glider_d_l">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#glider_d_l {
+color: white;
+background-image: url(:/pics/glider_down_left.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#glider_d_l:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#glider_d_l:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="glider_u_l">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#glider_u_l {
+color: white;
+background-image: url(:/pics/glider_up_left.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#glider_u_l:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#glider_u_l:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="glider_u_r">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#glider_u_r {
+color: white;
+background-image: url(:/pics/glider_up_right.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#glider_u_r:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#glider_u_r:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Spaceships">
+     <attribute name="title">
+      <string>Spaceships</string>
+     </attribute>
+     <widget class="QPushButton" name="spaceship_right">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>90</y>
+        <width>101</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#spaceship_right {
+color: white;
+background-image: url(:/pics/spaceship_right.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#spaceship_right:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#spaceship_right:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="spaceship_up">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>10</y>
+        <width>101</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#spaceship_up {
+color: white;
+background-image: url(:/pics/spaceship_up.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#spaceship_up:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#spaceship_up:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="spaceship_down">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>120</y>
+        <width>101</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#spaceship_down {
+color: white;
+background-image: url(:/pics/spaceship_down.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#spaceship_down:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#spaceship_down:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="spaceship_left">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>101</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#spaceship_left {
+color: white;
+background-image: url(:/pics/spaceship_left.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#spaceship_left:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#spaceship_left:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Pulsar">
+     <attribute name="title">
+      <string>Pulsar</string>
+     </attribute>
+     <widget class="QPushButton" name="pulsar_pattern">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>261</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pulsar_pattern {
+color: white;
+background-image: url(:/pics/pulsar.png);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#pulsar_pattern:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#pulsar_pattern:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="generation">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>40</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+color: white;
+font: bold;
+border: none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:17px; font-weight:400;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell Extra Bold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+color: white;
+font: bold;
+border: none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Rockwell Extra Bold'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;Game of Life / Ant&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="about_button">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>10</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#about_button {
+color: white;
+background-image: url(:/pics/bg.jpg);
+border-radius: 2px;
+border: 1px solid rgb(99,99,99);
+}
+QPushButton#about_button:hover {
+border: 1px solid rgb(200,200,200);
+}
+QPushButton#about_button:disabled {
+background-image: url(:/pics/bg_dis.jpg);
+color: rgb(150,150,150)
+}</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="speed_title">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>42</y>
+      <width>41</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0);
+color: white;
+font: bold;
+border: none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11px; font-weight:400;&quot;&gt;Speed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="about_article">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>100</y>
+      <width>321</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(22,22,22);
+color: white;
+font: bold;
+border: 2px solid white;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hra života (Game of Life) vznikla v roce 1970 a vymyslel ji britský matematik John Horton Conway. Hra je Turingovsky úplná, a lze v ní tak například sestavit teoretický model počítače založený na Von Neumannově koncepci. Pravidla hry jsou jednoduchá. Hrací pole se skládá z mřížky čtvercových buňek a je nekonečně velké. Každá buňka má právě 8 sousedů a může se nacházet v jednom ze dvou stavů - je buď mrtvá nebo živá. Tyto stavy se mohou měnit.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Pokud má živá buňka 2 nebo 3 živé sousedy, zůstane žít, jinak zemře.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Pokud má mrtvá buňka právě 3 živé sousedy, oživně.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Stav všech buňek se mění současně. Hráč udává pouze počáteční nastavení, zbytek hry se odehrává sám - proto je tato hra nazývana také jako &amp;quot;zero-player game&amp;quot; (hra bez hráčů). &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Mravenec Chrise Langtona (Langton's ant) vznikl o 16 let později něž Hra života. Hrací pole je stejné. Políčko však tentokrát změní stav ve chvíli kdy ho mravenec opustí. &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Pokud je původní stav políčka 'naživu', přejde mravenec  na políčko které je po jeho levici. &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Pokud je políčko mrtvé, přejde na políčko po jeho pravici. &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Každé políčko, které mravenec opustí, změní svůj stav&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Po několika tisících cyklech tento mravec začne vytvářet pravidelné útvary zvané dálnice.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Tato hra kombinuje Hru života a Langtonova mravence. Oproti původní Hře života, se tato verze liší konečností hracího pole, která je omezena. Hranice mají podmínku periodického opakování, tudíž se některé vzory chovájí jinak než v původní verzi hry. Vzhledem k malému rozlišení (64x32) zde mravenec postaví dálnici velmi krátkou. Mravence je možné použít k vytvoření iniciativního stavu pro Hru života.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Created by Pavel Jančík (2021)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <zorder>menu_bg</zorder>
+   <zorder>pages</zorder>
+   <zorder>start</zorder>
+   <zorder>next_step</zorder>
+   <zorder>speed</zorder>
+   <zorder>reset</zorder>
+   <zorder>clear</zorder>
+   <zorder>initAntGeneration</zorder>
+   <zorder>save_init_state</zorder>
+   <zorder>speed_label</zorder>
+   <zorder>load_file</zorder>
+   <zorder>save_file</zorder>
+   <zorder>ant_gen</zorder>
+   <zorder>add_ant</zorder>
+   <zorder>move_ant</zorder>
+   <zorder>start_ant</zorder>
+   <zorder>ant_gen_label</zorder>
+   <zorder>life_gen_label</zorder>
+   <zorder>patterns</zorder>
+   <zorder>patterns_group</zorder>
+   <zorder>generation</zorder>
+   <zorder>Title</zorder>
+   <zorder>about_button</zorder>
+   <zorder>speed_title</zorder>
+   <zorder>about_article</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
