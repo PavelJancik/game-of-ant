@@ -1,7 +1,7 @@
 # Game of Life & Langton's Ant
 
 <p align="center">
-   <img src="/resources/thumbnail.png" alt="Game of Life Thumbnail" width="400"/>
+   <img src="/resources/screenshot.png" alt="Game of Life Screenshot"/>
 </p>
 
 This game combine Conway's Game of Life and Langton's Ant. This game differs in grid size, as it is not infinite, some patterns behave other way than in original game. Due to small resolution of the grid, the ant will not come to the state, where he can create highways. However you can use him to create initial state for Game of Life.
